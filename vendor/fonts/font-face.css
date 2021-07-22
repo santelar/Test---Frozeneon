@@ -1,0 +1,23 @@
+@font-face {
+  src: url(./Roboto/RobotoRegular.woff2) format('woff2'),
+  url(./Roboto/RobotoRegular.woff) format('woff'),
+  url(./Roboto/RobotoRegular.ttf) format('truetype');
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(./Roboto/RobotoBold.woff2) format('woff2'),
+  url(./Roboto/RobotoBold.woff) format('woff'),
+  url(./Roboto/RobotoBold.ttf) format('truetype');
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(./LeksaSans/LeksaSansPro-Bold.woff2) format('woff2'),
+  url(./LeksaSans/LeksaSansPro-Bold.woff) format('woff'),
+  url(./LeksaSans/LeksaSansPro-Bold.ttf) format('truetype');
+  font-family: 'Leksa Sans';
+  font-weight: bold;
+}
