@@ -123,7 +123,6 @@
 }
 
 .price {
-    width: 72%;
     padding-top: 20px;
     margin: 0 auto;
     .price__radio {
@@ -499,7 +498,6 @@
 
 @media screen and (max-width: 810px) {
     .price {
-        width: 80%;
         .price__content {
             .price__items {
                 grid-template-columns: repeat(3, 1fr);
@@ -510,7 +508,6 @@
 
 @media screen and (max-width: 730px) {
     .price {
-        width: 84%;
         padding-top: 0;
         margin-top: -3px;
         .price__label {
@@ -581,14 +578,10 @@
             }
         }
     }
-    .price {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 580px) {
     .price {
-        width: 70%;
         .price__label {
             font-size: 12px;
         }
@@ -603,21 +596,8 @@
     }
 }
 
-@media screen and (max-width: 532px) {
-    .price {
-        width: 77%;
-    }
-}
-
-@media screen and (max-width: 484px) {
-    .price {
-        width: 82%;
-    }
-}
-
 @media screen and (max-width: 456px) {
     .price {
-        width: 87%;
         .price__content {
             padding: 10px 10px 10px 20px;
         }
@@ -626,7 +606,6 @@
 
 @media screen and (max-width: 430px) {
     .price {
-        width: 95%;
         .price__content {
             padding: 10px 10px 10px 20px;
         }
@@ -635,7 +614,6 @@
 
 @media screen and (max-width: 392px) {
     .price {
-        width: 95%;
         .price__label {
             font-size: 10px;
         }
