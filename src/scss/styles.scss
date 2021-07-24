@@ -14,7 +14,7 @@
     text-rendering: optimizeLegibility;
     display: flex;
     flex-direction: column;
-    background-image: url('/images/bg.png');
+    background-image: url('../images/bg.png');
     background-repeat: no-repeat;
     background-size: 100vw;
     p {
@@ -64,12 +64,12 @@
         }
         .button__back {
             background: none;
-            background-image: url('/images/back.png');
+            background-image: url('../images/back.png');
             background-size: contain;
         }
         .button__home {
             background: none;
-            background-image: url('/images/home.png');
+            background-image: url('../images/home.png');
             background-size: contain;
         }
         .wallet {
@@ -203,7 +203,7 @@
                 position: relative;
                 height: 320px;
                 width: 225px;
-                background-image: url(/images/shop__item.png);
+                background-image: url('../images/shop__item.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 box-sizing: border-box;
@@ -549,11 +549,11 @@
                 height: 40px;
             }
             .button__back {
-                background-image: url('/images/back__mobile.png');
+                background-image: url('../images/back__mobile.png');
                 background-repeat: no-repeat;
             }
             .button__home {
-                background-image: url('/images/home__mobile.png');
+                background-image: url('../images/home__mobile.png');
                 background-repeat: no-repeat;
             }
             .wallet {
