@@ -1,23 +1,24 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // подключили плагин 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: { main: './src/js/index.js' },
-    output: {
-    path: path.resolve(__dirname, 'dist'),
+  entry: { main: './src/js/index.js' },
+  output: {
+    path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
-        publicPath: ''
+    publicPath: ''
   },
-    mode: 'development',
+  mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
     compress: true,
     port: 8080,
     open: true
   },
-    module: {
+  module: {
     rules: [
       {
         test: /\.js$/,
@@ -35,11 +36,11 @@ module.exports = {
         // при обработке этих файлов нужно использовать
         // MiniCssExtractPlugin.loader и css-loader
         use: [MiniCssExtractPlugin.loader, {
-            loader: 'css-loader',
-            options: { importLoaders: 1 }
+          loader: 'css-loader',
+          options: { importLoaders: 1 }
         },
           // Добавьте postcss-loader
-        'postcss-loader']
+          'postcss-loader']
       }
     ]
   },
@@ -48,6 +49,14 @@ module.exports = {
       template: './src/index.html'
     }),
     new CleanWebpackPlugin(), // использовали плагин
-    new MiniCssExtractPlugin()
-  ] 
+    new MiniCssExtractPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/images'),
+          to: path.resolve(__dirname, './dist/images')
+        }
+      ]
+    })
+  ]
 };
