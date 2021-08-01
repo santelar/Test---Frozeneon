@@ -1,7 +1,5 @@
 # Frozeneon
 
-## https://santelar.github.io/Test---Frozeneon/
-
 Тестовое задание Frozeneon - страница браузерной игры Nethernite.
 
 Проект только на HTML и CSS - верстка по заданному макету (+ адаптив и сборка).
