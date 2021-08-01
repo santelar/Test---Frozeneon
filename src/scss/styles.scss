@@ -1,9 +1,30 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/font-face.css);
 
+$color_bg: #16151f;
+$color_content-bg: #272637;
+$color_header-bg_small: #242332;
+$color_font-main: #FFFFFF;
+$color_font-second: #B9B7EA;
+$color_font_label-big: rgba(151, 148, 198, 0.5);
+$color_font_label-big_hover: rgba(187, 184, 236, 0.5);
+$color_font_label-small: #9794C6;
+$color_price-label: #212031;
+$color_border-gradient_1: #F52CBF;
+$color_border-gradient_2: #FF7C46;
+$color_border-gradient_3: #682FBD;
+$color_border-gradient_4: #CB4CBC;
+$color_bg-gradient_1: #242333;
+$color_bg-gradient_2: #3C3B53;
+$color_green-bucks: #21CC14;
+$color_bg-gradient_2: #3C3B53;
+
+$font_main: 'Leksa Sans';
+$font_second: 'Roboto';
+
 .root {
-    font-family: 'Roboto', Arial, sans-serif;
-    background: #16151f;
+    font-family: $font_second, Arial, sans-serif;
+    background: $color_bg;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
@@ -28,7 +49,7 @@
     padding: 10px 50px;
     position: relative;
     .header__bg {
-        background-color: #16151f;
+        background-color: $color_bg;
         opacity: 0.7;
         width: 100%;
         height: 100%;
@@ -52,7 +73,7 @@
             cursor: pointer;
  
             &:hover {
-                border: 1px solid rgb(54, 54, 54);
+                border: 1px solid $color_bg-gradient_2;
                 box-sizing: border-box;
                 border-radius: 30px;
                 transition: 0.2s;
@@ -89,21 +110,21 @@
                     justify-content: center;
                     .wallet__cash-sum {
                         margin: 0 0 5px 0;
-                        font-family: Leksa Sans;
+                        font-family: $font_main;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 18px;
                         line-height: 1.22;
-                        color: #FFFFFF;
+                        color: $color_font-main;
                     }
                     .wallet__cash-discription {
                         margin: 0;
-                        font-family: Roboto;
+                        font-family: $font_second;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 10px;
                         line-height: 1.2;
-                        color: #B9B7EA;
+                        color: $color_font-second;
                     }
                 }
                 .wallet__buy {
@@ -133,42 +154,43 @@
         padding: 14px 30px;
         margin: 0 10px 0 0;
         text-align: center;
-        background: #212031;
-        border-bottom: 3px solid #212031;
-        font-family: Leksa Sans;
+        background: $color_price-label;
+        border-bottom: 3px solid $color_price-label;
+        font-family: $font_main;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 1.25;
-        color: rgba(151, 148, 198, 0.5);
+        color: $color_font_label-big;
         cursor: pointer;
         border-radius: 10px 10px 0 0;
         &:last-of-type {
             margin: 0;
         }
         &:hover {
-            color: rgba(187, 184, 236, 0.5);
+            color: $color_font_label-big_hover;
+
         }
     }
     .price__content {
         display: none;
         padding: 12px;
-        background: rgba(39, 38, 55);
-        font-family: Leksa Sans;
+        background: $color_content-bg;
+        font-family: $font_main;
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
         line-height: 37px;
         text-align: center;
-        color: #FFFFFF;
+        color: $color_font-main;
         border-radius: 0 10px 10px 10px;
     }
     .price__radio:checked + .price__label {
-        color: #FFFFFF;
-        background: rgba(39, 38, 55);
+        color: $color_font-main;
+        background: $color_content-bg;
         box-sizing: content-box;
         border-bottom: 3px solid transparent;
-        border-image: linear-gradient(90deg, #F52CBF 0%, #FF7C46 100%);
+        border-image: linear-gradient(90deg, $color_border-gradient_1 0%, $color_border-gradient_2 100%);
         border-image-slice: 1;
     }
     #tab_1:checked ~ #txt_1,
@@ -181,13 +203,13 @@
         .price__title {
             margin: 24px 0;
             padding: 0;
-            font-family: Leksa Sans;
+            font-family: $font_main;
             font-style: normal;
             font-weight: bold;
             font-size: 30px;
             line-height: 1.22;
             text-align: center;
-            color: #FFFFFF;
+            color: $color_font-main;
         }
         .price__items {
             display: grid;
@@ -229,29 +251,29 @@
                     flex-direction: column;
                     .item__cost-sum {
                         margin: 8px 0 0 0;
-                        font-family: Roboto;
+                        font-family: $font_second;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 30px;
                         line-height: 120%;
                         text-align: center;
-                        color: #FFFFFF;
+                        color: $color_font-main;
                     }
                     .item__cost-description {
-                        font-family: Roboto;
+                        font-family: $font_second;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 14px;
                         line-height: 1.6;
                         text-align: center;
-                        color: #FFFFFF;
+                        color: $color_font-main;
                     }
                 }
                 .item__button {
                     margin-top: 27px;
                     width: 155px;
                     height: 47px;
-                    background: linear-gradient(90deg, #682FBD, #CB4CBC);
+                    background: linear-gradient(90deg, $color_border-gradient_3, $color_border-gradient_4);
                     position: relative;
                     border: 1px solid transparent;
                     border-radius: 146px;
@@ -265,7 +287,7 @@
                         opacity: 0.7;
                     }
                     &:active {
-                        background: linear-gradient(90deg, #550cc4, #c217ae);
+                        opacity: 0.5;
                     }
                 }
                 .item__button::after {
@@ -274,28 +296,28 @@
                     height: 41px;
                     top: 3px; bottom: 3px;
                     left: 3px; right: 3px;
-                    background: linear-gradient(90deg, #242333 0%, #3C3B53 100%);
+                    background: linear-gradient(90deg, $color_bg-gradient_1 0%, $color_bg-gradient_2 100%);
                     content: '';
                     z-index: -1;
                     border-radius: 146px;
                 }
                 .item__container {
                     display: flex;
-                    font-family: Roboto;
+                    font-family: $font_second;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 14px;
                     line-height: 1.14;
                     .item__buy {
-                        color: #FFFFFF;
+                        color: $color_font-main;
                         margin-right: 20px;
                     }
                     span {
-                        color: #21CC14;
+                        color: $color_green-bucks;
                         margin-right: 3px;
                     }
                     .item__cost {
-                        color: #FFFFFF;
+                        color: $color_font-main;
                     }
                 }
 
@@ -508,12 +530,9 @@
         .price__label {
             padding: 5px 5px;
             margin: 0 0 0 -4px;
-            text-align: center;
-            background: #212031;
-            border-bottom: 3px solid #212031;
             font-size: 16px;
             line-height: 1;
-            color: #9794C6;
+            color: $color_font_label-small;
             border-radius: 0;
             &:last-of-type {
                 margin: -4px 0 0 -4px;
@@ -533,7 +552,7 @@
 @media screen and (max-width: 640px) {
     .header {
         padding: 0 5px;
-        background-color: #242332;
+        background-color: $color_header-bg_small;
         .header__bg {
             display: none;
         }

@@ -67,7 +67,7 @@
   cursor: pointer;
 }
 .header .header__nav .button:hover {
-  border: 1px solid #363636;
+  border: 1px solid #3C3B53;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 30px;
@@ -122,7 +122,7 @@
 }
 .header .header__nav .wallet .wallet__container .wallet__cash .wallet__cash-sum {
   margin: 0 0 5px 0;
-  font-family: Leksa Sans;
+  font-family: "Leksa Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -131,7 +131,7 @@
 }
 .header .header__nav .wallet .wallet__container .wallet__cash .wallet__cash-discription {
   margin: 0;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -165,7 +165,7 @@
   text-align: center;
   background: #212031;
   border-bottom: 3px solid #212031;
-  font-family: Leksa Sans;
+  font-family: "Leksa Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -184,7 +184,7 @@
   display: none;
   padding: 12px;
   background: #272637;
-  font-family: Leksa Sans;
+  font-family: "Leksa Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -214,7 +214,7 @@
 .price .price__content .price__title {
   margin: 24px 0;
   padding: 0;
-  font-family: Leksa Sans;
+  font-family: "Leksa Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -405,7 +405,7 @@
 }
 .price .price__content .price__items .item .item__cost .item__cost-sum {
   margin: 8px 0 0 0;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -414,7 +414,7 @@
   color: #FFFFFF;
 }
 .price .price__content .price__items .item .item__cost .item__cost-description {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -448,8 +448,7 @@
   opacity: 0.7;
 }
 .price .price__content .price__items .item .item__button:active {
-  background: -webkit-gradient(linear, left top, right top, from(#550cc4), to(#c217ae));
-  background: linear-gradient(90deg, #550cc4, #c217ae);
+  opacity: 0.5;
 }
 .price .price__content .price__items .item .item__button::after {
   position: absolute;
@@ -469,7 +468,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -644,9 +643,6 @@
   .price .price__label {
     padding: 5px 5px;
     margin: 0 0 0 -4px;
-    text-align: center;
-    background: #212031;
-    border-bottom: 3px solid #212031;
     font-size: 16px;
     line-height: 1;
     color: #9794C6;
